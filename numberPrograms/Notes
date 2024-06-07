@@ -1,0 +1,225 @@
+		Literals
+
+(1)Integral
+
+-> Integer
+
+Integer Literal  
+		-> Decimal  -> Base -10  (0 - 9)
+			int x = 10;
+		
+		-> Octal	-> Base - 7 (0 - 7)
+			int x = 010;
+		
+		-> HexaDecimal		-> Base - 16 (0 - 9)(a - f)
+			int x = 0x10;
+		
+
+
+-> Floating point
+		1. It only accept decimal values as floating point.
+			example  -> double x = 2.75;
+					 -> float f = 235.55;
+				
+		2. Scientific notation is allowed.
+			example  -> double d = 2.7e5;
+				     -> float f = 12.03e2f;
+				
+		3. Integers values can be stored in floating point.
+			example  -> double d  = 10;  (1110.0)
+			
+		4. Floating point values is not stored in octal, hexadecimal and binary format.
+		
+
+
+
+'\u0000' - '\uFFFF'
+
+
+A -> 65      Z -> 90
+a -> 97      z -> 122
+0 -> 49      9 -> 57
+space - > 32
+
+
+
+
+
+
+			 Functions
+			 
+			 -> Tnteger.parsInt -> 
+			 
+			 
+			 					STRING
+			 
+			 
+			 
+String : It's a combination or two or more characters when enclosed in double quotes.
+		 It is a user defined data type (Non primitive).
+		 It is an in-built class.
+		 is is stored in lang package.
+		 They are immutable(Unchangeable) in nature .
+		 There are two ways to declare String in java.
+		 	-> using "" -> this type of string gets string in constant pool.
+		 	-> Using new keyword -> This type of string is stored in non-constant pool.
+		 	
+		 	
+		Duplicate data will not be created in constant pool.
+		Duplication of data is allowed in non-constant pool.
+		 	
+		 	
+		 	Methods of a String
+		 	
+		 	-> length() : Finds the length of a given String
+		 	-> charAt() : Extracts character from a given String
+		 	-> toUppercase() : Converts all changes to uppercase
+		 	-> toLowercase() : Converts all changes to lowercase
+		 	-> equals() : Check if both string objects are same or not. Return True or False
+		 	-> compareTo() : Check if both the string object are same or not . Return +ve, -ve or 0 value
+		 	-> toCharArray() : Converts string to character array.
+		 	-> equalIgnoreCase() : Check if both the string object are same or not. Return true or false[it ignore case]
+		 	-> isAlphabet() : Check if an entered character is Alphabet or not.
+		 	-> split() : Split the given string. 
+		 	-> isDigit() : Check if there is a digit is present or not.
+		 	-> Integer.parseInt() : To convert String into integer 
+		 	-> String.ValueOf() : To convert integer to String
+		 	-> append() : Increase the size of String(2*n+2) n -> original size	
+		 	-> insert(0 , 0) -> Insert a particular character AT an index
+		 	-> substring(0 , 0) -> find a particular sub String of a given index {pointer kabhi bhi phiche nhi ayega}
+		 	-> subsequence() -> Does not allow repeated values		{isme pointer phivhe aa sakata haa}	(2*n+1)
+		 	
+		 	
+		 	
+		Constructor
+		 	
+		 	-> Default constructor 
+		 	-> Parameterised constructor
+		 	
+		 	
+		 Rules for defining a constructor
+		 	
+		 	-> They are speliced methods whose name must be same as class name.
+		 	-> They does not support return type.
+		 	-> They are by default public/default.
+		 	 
+		 	
+		 	
+		 	
+		 	
+		 	
+	Types of variable : 
+				
+				-> There are three types of variablre in java :
+				  -> local variable
+				  -> Instance Variable
+				  -> Static variable
+				  
+		-> Local Variable :: They are those variable which is present inside aye method (User defined/local variable)
+							 They must be initialized
+		
+		-> Instance variable :: They are those variable which is present inside a class outside the methods.
+								Default values are considered for instance variable.
+								It has the highest priority.
+								
+		-> Static variable :: They are the variable which is present inside the class outside the method with a keyword "static".
+							  Default values are considered for instance variable.
+		 	
+		 	Whenever there is a  name clash between Instance variable and constructor parameter compiler considers the default or the priority value of instance variable.
+		 	To resolve such problem and increase the readability of the code we use "this" key word.  
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	Inheritance : 
+		 			-> It's a fundamental OOP's concept which states one class ininheriting the properties of one class into another class 
+		 			-> The class form which properties and Baheviour will be inherit is known as parent class, Super class, Base class  
+		 			-> The class that will inherit and behaviour is known as child class, sub class ,
+		 			-> We can inherit the properties and behaviours using "extends" Keyword
+		 			-> Inheritance is "is-a" relation.
+		 			
+		 			-> Inheriting behaviour 
+		 			
+		 			  
+		 			Q -> Why multiple Inheritance is not supported in java ?
+		 			
+		 				When we try to inherit the property or behaviour of two or more parent class inside a child class compliler gets confused (it rais to ambigudide problem) because whose property or behavous has to be inherited first
+		 				This problem can be resolved using abstract class or inter-face
+		 			
+		 			Types of Inheritance :
+		 						-> Single Inheritance
+		 						-> Multilevel Inheritance
+		 						-> Hybrid Inheritance
+		 						-> Hierarchical Inheritance
+		 			
+		 			
+		 			
+		 			
+		 			
+		 			
+		 			
+		 			
+		 	Method overriding : 
+		 			-> It means methods having same name but change in implementation 
+		 			-> It can be achived through inheritance only.
+		 			
+		 	
+		 	
+		 	Polymorphism : 
+		 			-> Their are two types of polymorphism compile time polymorphism (method overloading) rum time polymorphism (method overriding) 
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	DSA : 
+		 	
+		 		Array : 
+		 				Array is a linera data structure which constuites homogeneous elements in a contineous manner.
+		 				
+		 				for(data_type variable name : character name)
+		 				
+		 				
+		 				mid point formula : mid = (start + end) / 2;                jaha sirf eak bar nikalna hoo
+		 									mid = (start + (end - start)) / 2;      jaha bar bar mid point change hoo
+			 	
+		 	Delecration of 2D array : int[][] x;
+		 							  int [][]x;
+		 							  int x[][];
+		 							  int[] []x;
+		 							  int []x[];
+		 							  int[] x[];
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
