@@ -1,43 +1,48 @@
 package arrays;
 
-import java.util.Scanner;
-
 public class Multiplication_2D {
+
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("Enter the size of row of matrix_1 : ");
-		int n = sc.nextInt();
 
-		System.out.print("Enter the size of column of matrix_1 : ");
-		int m = sc.nextInt();
-		
-		int[][] arr_1 = new int[n][m];
-		System.out.println("Enter the elements of first matrix :-");
-		
-		for(int i = 0; i < n; i++) {
-			for(int j = 0; j < m; j++) {
-				arr_1[i][j] = sc.nextInt();
+		int[][] matrix1 = { { 1, 2, 3 }, { 4, 5, 6 } };
+
+		int[][] matrix2 = { { 7, 8 }, { 9, 10 }, { 11, 12 } };
+
+		int[][] product = multiplyMatrices(matrix1, matrix2);
+
+		printMatrix(product);
+	}
+
+	public static int[][] multiplyMatrices(int[][] matrix1, int[][] matrix2) {
+		int rows1 = matrix1.length;
+		int cols1 = matrix1[0].length;
+		int rows2 = matrix2.length;
+		int cols2 = matrix2[0].length;
+
+		if (cols1 != rows2) {
+			throw new IllegalArgumentException(
+					"Matrix1 columns: " + cols1 + " did not match Matrix2 rows: " + rows2 + ".");
+		}
+
+		int[][] result = new int[rows1][cols2];
+
+		for (int i = 0; i < rows1; i++) {
+			for (int j = 0; j < cols2; j++) {
+				for (int k = 0; k < cols1; k++) {
+					result[i][j] += matrix1[i][k] * matrix2[k][j];
+				}
 			}
 		}
-		
-		System.out.print("Enter the size of row of matrix_2 : ");
-		int a = sc.nextInt();
 
-		System.out.print("Enter the size of column of matrix_2 : ");
-		int b = sc.nextInt();
-		
-		int[][] arr_2 = new int[a][b];
-		System.out.println("Enter the elements of first matrix :-");
-		
-		for(int i = 0; i < n; i++) {
-			for(int j = 0; j < m; j++) {
-				arr_2[i][j] = sc.nextInt();
+		return result;
+	}
+
+	public static void printMatrix(int[][] matrix) {
+		for (int[] row : matrix) {
+			for (int element : row) {
+				System.out.print(element + " ");
 			}
+			System.out.println();
 		}
-		
-		
-		
-		sc.close();
 	}
 }

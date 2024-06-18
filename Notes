@@ -205,7 +205,107 @@ String : It's a combination or two or more characters when enclosed in double qu
 		 	
 		 	
 		 	
+		 	Collection Framework
 		 	
+		 	->	collection :- (util)
+		 |					interface :-
+		 |						-> Array list
+		 |						-> Linked list
+		 |						-> Hash table
+		 |	
+		 |	
+		 |	
+		 |	
+		this applied on -> 	collections :- (util)
+		 							-> sorted
+		 							-> search
+		 							-> sum
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	List
+		 		-> Array List
+		 		-> Linked list
+		 		->	Vector
+		 		
+		 	Set
+		 		-> Hash Set
+		 		-> Tree Set
+		 		
+		 	Queue
+		 		-> Priority Queue
+		 		
+		 		: Dequeue
+		 			Priority Dequeue
+
+
+
+		 	
+		 	
+		 	Array List :-
+		 		Syntax for creating Arraylist:-
+		 				
+		 				import java.util.arraylist;
+		 				
+		 				
+		 				ArrayList<Datatype class> arraylist = new ArrayList<Datatype class>();
+		 				
+		 				ArrayList<Integer> al = new ArrayList<Integer>();
+		 				ArrayList<Double> al2 = new ArrayList<Double>();
+		 				
+		 				ArrayList<Object> al = new ArrayList<Object>();		valid
+		 				ArrayList<Character> al = new ArrayList<>();		vlaid
+		 				List<Integer> al = new ArrayList<>();				vlaid
+		 				List<Float> al = new List<Float>();					invlaid 	JVM will be confused which list to inherit
+		 				ArrayList<Float> al = new ArrayList<Float>();		invlaid 	float is a data type
+		 				ArrayList<Boolean> al = new List<Boolean>();		invlaid 	child can not inherit the properties of parent class
+		 	
+		 	
+		 				Iterator :
+		 				
+		 						
+							add method : It is used to add the element in an array list
+							 Example : al.add(10);
+ 											 al.add(20);
+ 											 al.add(30);
+
+											 hasNext : It is used to check weather the next memory location is filled by an element or not
+ 													 It returns boolean output
+
+ 											next() : It is used to return the element at a particular location wnenever hasNext() is true
+		 	
+		 	
+		 	
+		 	
+		 			Linked important Packages
+		 					-> add(element)                     => insert element in list
+		 					-> add(int index, element)			=> insert element at a particular index
+		 					-> addFirst(element)				=> insert element at first
+		 					-> addLast(element)					=> insert element at last
+		 					-> Clear()							=> clear the list
+		 					-> desendingItrator()				=> return list in decending order
+		 					-> get(int index)					=> return element ata particular index
+		 					-> getFirst()						=> return element at first index 
+		 					-> getLast()						=> return element at last index 
+		 					-> indexOf(element)					=> return first element of index 
+		 					-> lastIndexOf(element)				=> return last element of index
+		 					-> offer(element)					=> same as add
+		 					-> offerFirst(element)				=> same as addFirst
+		 					-> offerLast(element)				=> same as addLast
+		 					-> peek()
+		 					-> poll()
+		 					-> remove()
+		 					-> size()							=> return size of list
+		 					-> toArray()						=> convert list to array
+		 					-> toString()						=> convert list to string
+		 					-> contains(element)				=> check element is present or not
+		 					
+		 					
+		 	
+		 					
 		 	
 		 	
 		 	
