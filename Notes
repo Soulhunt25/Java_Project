@@ -306,8 +306,10 @@ String : It's a combination or two or more characters when enclosed in double qu
 		 					
 		 	
 		 					
-		 	
-		 	
+		 	HashSet -> Remove Duplicates & sorted order
+		 				output in increasing order
+		 	LinkedHashSet -> Remove Duplicates & Maintain Order
+		 				output in the same order
 		 	
 		 	
 		 	
