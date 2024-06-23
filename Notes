@@ -316,9 +316,22 @@ String : It's a combination or two or more characters when enclosed in double qu
 		 	
 		 	
 		 	
+		 Abstract class :-	
 		 	
-		 	
-		 	
+ Where to use abstract class?
+ We will use abstract class where we want to restrict the user form creating the object of parent class because by creating object of parent class we cannot call child class methods.
+ When you want to inherit a particular method in different classes the create the class abstract.
+
+ Abstract method : A method without any body is called as abstract method.
+ 		these methods are declared by using abstract key word as modifiers
+ 		these methods contain only decleration part and the implementation is done by a derived class
+ 		
+ 		
+ Abstract class : An abstract class is a special class than contains both abstract and non abstract members
+ 
+ note : Abstract class contain abstract method and non abstract methods.
+		A class can only inherit from one abstract class.
+		We can not create object of abstract of abstract class.
 		 	
 		 	
 		 	
