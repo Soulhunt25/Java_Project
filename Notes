@@ -334,7 +334,7 @@ String : It's a combination or two or more characters when enclosed in double qu
 		We can not create object of abstract of abstract class.
 		 	
 		 	
-		 	
+		 	Encapulation Means wraping of a data in a single unit it is also termed as data hiding. here we are hiding the datafrom the extrnal user and giving controlled access to them
 		 	
 		 	
 		 	
