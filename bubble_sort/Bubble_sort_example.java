@@ -15,6 +15,8 @@ public class Bubble_sort_example {
 		return arr;
 	}
 	
+	// Liner Search
+	
 	static boolean search(int[] arr, int key) {
 		for(int i : arr) {
 			if(i == key) {
