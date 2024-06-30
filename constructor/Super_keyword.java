@@ -49,7 +49,6 @@ class Child extends Parent {
 
 public class Super_keyword {
 	public static void main(String[] args) {
-		Parent p = new Parent("Pranjal", 10210);
 		Child c = new Child("Pranjal", 10210, 1234);
 		c.disp();
 	}

@@ -339,10 +339,15 @@ String : It's a combination or two or more characters when enclosed in double qu
 		 	
 		 	
 		 	
+		What is exception?
+		
+			Exception(Runtime) 					Error(Compile time) 	
+		 	-> IOexception						-> Syntax Error
+		 	-> Arithmetic Exception				-> Compile Time Error
+		 	-> SQL Exception					
+		 	-> IndexOutOfBound Exception		
 		 	
-		 	
-		 	
-		 	
+		 	Exception -> (Throwable) -> (Object Class)
 		 	
 		 	
 		 	
