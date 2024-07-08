@@ -351,6 +351,16 @@ String : It's a combination or two or more characters when enclosed in double qu
 		 	
 		 	
 		 	
+		 Static :
+		 		
+		 		-> this comes under class 
+		 		-> Stsatic is loded by class loder
+		 		-> Compilation on the cide is started by first line
+		 		 	but execuation is started from main method
+		 		-> first come first service
+		 	
+		 	
+		 	
 		 	
 		 	
 		 	

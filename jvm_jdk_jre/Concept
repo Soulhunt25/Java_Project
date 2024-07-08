@@ -1,0 +1,30 @@
+				JVM		JDK		JRE
+				
+				
+				
+				JVM :
+					-> Interpreter
+					-> JIT Compiler
+					
+								  javac compiler
+					Source code ------------------> Byte Code
+					
+					javac compiler : Not present in the JVM
+					
+					JIT compiler -> Just In Time Compiler
+					
+								 Interpreter					 JIT compiler
+					Byte code ------------------> Machine code -----------------> Micro porcessor
+					
+						JRE :
+					
+					JRE is combination of JVM + Liberies
+					
+					JDK = is combination of JRE + javac
+					
+					
+					What is JVM ? 
+					
+					
+					What is the use of JIT ?
+					What is the use of JAVAc ?
